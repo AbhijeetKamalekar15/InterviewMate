@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className='flex-col w-full pb-24'>
+    <div className='flex-col w-full mt-10 pb-24'>
       <Container>
         <div className="my-8">
           <h2 className="text-3xl text-center md:text-left md:text-6xl">
