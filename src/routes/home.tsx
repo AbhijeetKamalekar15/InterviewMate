@@ -2,7 +2,7 @@ import { UserButton } from '@clerk/clerk-react'
 
 const HomePage = () => {
   return (
-    <div>HomePage <UserButton/></div>
+    <div className='flex-col w-full pb-24'>HomePage <UserButton/></div>
   )
 }
 

@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const PublicLayout = () => {
   return (
-    <div>
+    <div className='w-full'>
         {/* handler to store the user data */}
         <Header/>
 
