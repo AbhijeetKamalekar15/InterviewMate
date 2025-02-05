@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import Lucide icons
 import { Link } from "react-router-dom";
@@ -34,7 +35,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ to, children }) => {
     <li>
       <Link
         to={to}
-        className="hover:underline text-gray-300 hover:text-gray-100"
+        className="hover:underline  hover:text-gray-100"
       >
         {children}
       </Link>
@@ -44,75 +45,23 @@ const FooterLink: React.FC<FooterLinkProps> = ({ to, children }) => {
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black text-gray-300 hover:text-gray-100 py-8">
+    <div className="w-full bg-gray-100">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* First Column: Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {MainRoutes.map((route) => (
-                <FooterLink key={route.href} to={route.href}>
-                  {route.label}
-                </FooterLink>
-              ))}
-            </ul>
-          </div>
-
-          {/* Second Column: About Us */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">About Us</h3>
-            <p>
-              We are committed to helping you unlock your full potential with
-              AI-powered tools. Our platform offers a wide range of resources to
-              improve your interview skills and chances of success.
-            </p>
-          </div>
-
-          {/* Third Column: Services */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Services</h3>
-            <ul>
-              <FooterLink to="/services/interview-prep">
-                Interview Preparation
-              </FooterLink>
-              <FooterLink to="/services/career-coaching">
-                Career Coaching
-              </FooterLink>
-              <FooterLink to="/services/resume-building">
-                Resume Building
-              </FooterLink>
-            </ul>
-          </div>
-
-          {/* Fourth Column: Address and Social Media */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <p className="mb-4">123 AI Street, Tech City, 12345</p>
-            <div className="flex gap-4">
-              <SocialLink
-                href="https://facebook.com"
-                icon={<Facebook size={24} />}
-                hoverColor="text-blue-500"
-              />
-              <SocialLink
-                href="https://twitter.com"
-                icon={<Twitter size={24} />}
-                hoverColor="text-blue-400"
-              />
-              <SocialLink
-                href="https://instagram.com"
-                icon={<Instagram size={24} />}
-                hoverColor="text-pink-500"
-              />
-              <SocialLink
-                href="https://linkedin.com"
-                icon={<Linkedin size={24} />}
-                hoverColor="text-blue-700"
-              />
-            </div>
-          </div>
+      <footer className="">
+      <div className="container mx-auto flex items-center justify-center space-y-4 md:flex-row md:space-y-0">
+        <div className="flex gap-8">
+          <a href="#" className="flex gap-1 text-gray-500 hover:text-gray-900" aria-label="GitHub">
+            <FaGithub size={24} />Github
+          </a>
+          <a href="#" className="flex gap-1 text-gray-500 hover:text-gray-900" aria-label="LinkedIn">
+            <FaLinkedin size={24} /> LinkedIn
+          </a>
+          <a href="#" className="flex gap-1 text-gray-500 hover:text-gray-900" aria-label="Twitter">
+            <FaTwitter size={24} />Twitter
+          </a>
         </div>
+      </div>
+    </footer>
       </Container>
     </div>
   );

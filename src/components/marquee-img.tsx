@@ -2,7 +2,7 @@ export const MarqueImg = ({ img }: { img: string }) => {
     return (
       <img
         src={img}
-        className="w-44 h-44 xl:w-52 xl:h-52 object-contain grayscale mx-12 xl:mx-16"
+        className="w-32 h-26 xl:w-38 xl:h-26 object-contain g mx-12 xl:mx-16"
         alt=""
       />
     );

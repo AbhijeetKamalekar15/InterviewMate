@@ -7,69 +7,62 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className='flex-col w-full mt-10 pb-24'>
-      <Container>
-        <div className="my-8">
-          <h2 className="text-3xl text-center md:text-left md:text-6xl">
-            <span className="text-outline font-extrabold md:text-8xl">
+    <div className='flex-col w-full bg-gray-100'>
+      <Container className="">
+        <div className="my-8 text-center mt-20">
+          <h2 className="text-xl text-center">
+            <span className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-orange-500 font-extrabold md:text-5xl">
               AI Superpower
             </span>
-            <span className="text-gray-500 font-extrabold">
-              - A better way to
+            <span className="text-gray-500 font-extrabold  md:text-2xl">
+            – Elevate Your Interview Game
             </span>
             <br />
-            improve your interview chances and skills
+            <br />
+            Improve your interview chances and skills
           </h2>
 
-          <p className="mt-4 text-muted-foreground text-sm">
-            Boost your interview skills and increase your success rate with AI_driven insights. Discover a smart way to prepare, practice and stand out
+          <p className="mt-2 text-muted-foreground text-sm">
+          Boost your interview skills and increase your success rate with AI_driven insights. Discover a smart way to prepare, practice and stand out
+
           </p>
         </div>
+        </Container>
+        <Container className="md:flex items-center justify-center">
 
-        <div className="flex w-full items-center justify-evenly md:px-12 md:py-16 md:items-center md:justify-end gap-12">
-          <p className="text-3xl font-semibold text-gray-900 text-center">
+        {/* image section */}
+        <div className="flex items-center justify-center w-full rounded-xl bg-gray-100 h-[320px]  overflow-hidden relative">
+          <img
+            src="/assets/img/newl1.png"
+            alt=""
+            className="h-full w-70 md:w-70 bg-transparent md:h-full"
+          />     
+        </div>
+
+
+        <div className="w-full items-center justify-evenly md:px-12 md:py-16 md:items-center md:justify-end ">
+          <p className="bg-gray-200 rounded-md p-2 text-3xl font-semibold text-gray-900 text-center">
             250k+
             <span className="block text-xl text-muted-foreground font-normal">
               Offers Recieved
             </span>
           </p>
-          <p className="text-3xl font-semibold text-gray-900 text-center">
+          <div className="h-2">
+
+          </div>
+          <p className="bg-gray-200 rounded-md p-2 text-3xl font-semibold text-gray-900 text-center">
             1.2M+
             <span className="block text-xl text-muted-foreground font-normal">
               Interview Aced
             </span>
           </p>
         </div>
-
-        {/* image section */}
-        <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
-          <img
-            src="/assets/img/hero.jpg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-
-          <div className="absolute top-4 left-4 px-4 py-2 rounded-md bg-white/40 backdrop-blur-md">
-            Inteviews Copilot&copy;
-          </div>
-
-          <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
-            <h2 className="text-neutral-800 font-semibold">Developer</h2>
-            <p className="text-sm text-neutral-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              distinctio natus, quos voluptatibus magni sapiente.
-            </p>
-
-            <Button className="mt-3">
-              Generate <Sparkles />
-            </Button>
-          </div>
-        </div>
       </Container>
       {/* marquee section */}
 
-      <div className=" w-full my-12">
-        <Marquee pauseOnHover>
+      <div className=" w-full mt-4">
+        <p className="text-center mb-4 text-gray-300">Practice for your <span className="font-bold">DREAM JOB</span></p>
+        <Marquee className="h-1/7" pauseOnHover>
           <MarqueImg img="/assets/img/logo/firebase.png" />
           <MarqueImg img="/assets/img/logo/meet.png" />
           <MarqueImg img="/assets/img/logo/zoom.png" />
@@ -97,14 +90,14 @@ const HomePage = () => {
           </div>
 
           <div className="col-span-1 md:col-span-2 gap-8 max-h-96 min-h-96 w-full flex flex-col items-center justify-center text-center">
-            <p className="text-center text-muted-foreground">
+            <p className="text-center text-sm text-muted-foreground">
               Transform the way you prepare, gain confidence, and boost your
               chances of landing your dream job. Let AI be your edge in
               today&apos;s competitive job market.
             </p>
 
             <Link to={"/generate"} className="w-full">
-              <Button className="w-3/4">
+              <Button className="w-3/4 bg-blue-700 hover:bg-blue-500">
                 Generate <Sparkles className="ml-2" />
               </Button>
             </Link>
