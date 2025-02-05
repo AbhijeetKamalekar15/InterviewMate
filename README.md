@@ -1,4 +1,3 @@
-
 # 🧑‍💻InterviewMate
 
 
@@ -20,4 +19,10 @@ This app is designed to help users prepare for job interviews by offering a cust
 - 📈 ***Personalized Learning***: Receive suggestions based on your performance.
 
 ### 🛠️ Technology Stack
-***reactjs***,  ***tailwind css***,  ***shadcn/ui***,  ***clerk***,  ***gemini API***, ***firebase***,    ***react-hook-speech-to-text***
+- ⚛️ ReactJS
+- 🌐 TailwindCSS
+- 🖌️ ShadCN/UI
+- 🔑 Clerk Authentication
+- 🤖 Gemini API
+- 🔥 Firebase
+- 🗣️ React Hook Speech-to-Text
