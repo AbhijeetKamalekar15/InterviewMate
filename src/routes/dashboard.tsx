@@ -51,14 +51,15 @@ export const Dashboard = () => {
 
   return (
     <>
-      <div className="flex w-full items-center justify-between">
+      <div className="flex mt-20 bg-gray-100 w-full items-center justify-between">
         {/* headings */}
         <Headings
           title="Dashboard"
           description="Create and start you AI Mock interview"
+
         />
         <Link to={"/generate/create"}>
-          <Button size={"sm"}>
+          <Button className="bg-blue-600 hover:bg-blue-700" size={"sm"}>
             <Plus /> Add New
           </Button>
         </Link>
@@ -67,7 +68,7 @@ export const Dashboard = () => {
       <Separator className="my-8" />
       {/* content section */}
 
-      <div className="md:grid md:grid-cols-3 gap-3 py-4">
+      <div className="bg-gray-100 grid sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 py-4">
         {loading ? (
           Array.from({ length: 6 }).map((_, index) => (
             <Skeleton key={index} className="h-24 md:h-32 rounded-md" />
@@ -89,8 +90,7 @@ export const Dashboard = () => {
             </h2>
 
             <p className="w-full md:w-96 text-center text-sm text-neutral-400 mt-4">
-              There is no available data to show. Please add some new mock
-              interviews
+              There is no available data to show. Please add some new mock interviews.
             </p>
 
             <Link to={"/generate/create"} className="mt-4">
@@ -102,6 +102,7 @@ export const Dashboard = () => {
           </div>
         )}
       </div>
+
     </>
   );
 };

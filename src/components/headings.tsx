@@ -15,7 +15,7 @@ export const Headings = ({
     <div>
       <h2
         className={cn(
-          "text-2xl md:text-3xl text-gray-800 font-semibold font-sans",
+          "text-2xl md:text-3xl text-gray-700 font-semibold font-sans",
           isSubHeading && "text-lg md:text-xl"
         )}
       >

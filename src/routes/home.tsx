@@ -74,22 +74,22 @@ const HomePage = () => {
         </Marquee>
       </div>
 
-      <Container className="py-8 space-y-8">
-        <h2 className="tracking-wide text-xl text-gray-800 font-semibold">
+      <Container className="py-8 space-y-8 mt-4">
+        <h2 className="tracking-wide text-center text-gray-700">
           Unleash your potential with personalized AI insights and targeted
           interview practice.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-5">
           <div className="col-span-1 md:col-span-3">
             <img
-              src="/assets/img/office.jpg"
+              src="/assets/img/pic.png"
               alt=""
-              className="w-full max-h-96 rounded-md object-cover"
+              className="w-full max-h-96 rounded-md object-contain"
             />
           </div>
 
-          <div className="col-span-1 md:col-span-2 gap-8 max-h-96 min-h-96 w-full flex flex-col items-center justify-center text-center">
+          <div className="col-span-1 md:col-span-2 gap-8 max-h-96 md:min-h-96 w-full flex flex-col items-center justify-center text-center">
             <p className="text-center text-sm text-muted-foreground">
               Transform the way you prepare, gain confidence, and boost your
               chances of landing your dream job. Let AI be your edge in

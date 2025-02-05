@@ -94,3 +94,7 @@ p, span, a, li, button, input, textarea {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
+
+.bg{
+ background-color: #f3f4f6;
+}

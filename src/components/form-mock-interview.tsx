@@ -196,7 +196,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
       <FormProvider {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full p-8 rounded-lg flex-col flex items-start justify-start gap-6 shadow-md "
+          className="w-full p-8 rounded-lg flex-col flex items-start justify-start gap-6 shadow-md bg-gray-50"
         >
           <FormField
             control={form.control}
@@ -209,7 +209,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
                 </div>
                 <FormControl>
                   <Input
-                    className="h-12"
+                    className="h-12 bg-transparent"
                     disabled={loading}
                     placeholder="eg:- Full Stack Developer"
                     {...field}
@@ -231,7 +231,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
                 </div>
                 <FormControl>
                   <Textarea
-                    className="h-12"
+                    className="h-12 bg-transparent"
                     disabled={loading}
                     placeholder="eg:- describle your job role"
                     {...field}
@@ -254,7 +254,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
                 <FormControl>
                   <Input
                     type="number"
-                    className="h-12"
+                    className="h-12 bg-transparent"
                     disabled={loading}
                     placeholder="eg:- 5 Years"
                     {...field}
@@ -276,7 +276,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
                 </div>
                 <FormControl>
                   <Textarea
-                    className="h-12"
+                    className="h-12 bg-transparent"
                     disabled={loading}
                     placeholder="eg:- React, Typescript..."
                     {...field}

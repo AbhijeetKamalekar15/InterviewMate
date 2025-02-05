@@ -36,32 +36,33 @@ const Header = () => {
           {/* navigation section */}
           <nav className="hidden md:flex items-center gap-6">
             <NavigationRoutes />
-            
+
           </nav>
 
           {/* profile section */}
           <div className="ml-auto flex items-center gap-6">
-              {/* profile */}
-              {userId && (
+            {/* profile */}
+            {userId && (
               <NavLink
                 to={"/generate"}
                 className={({ isActive }) =>
                   cn(
-                    "text-sm text-blue-700 hover:text-green-500",
-                    isActive && " font-bold text-green-500 "
+                    "text-sm text-blue-700 hover:text-green-500 hidden sm:inline-flex", // Hide on sm and below
+                    isActive && "font-bold text-green-500"
                   )
                 }
               >
-
-                <i className="fa-solid fa-user-tie"></i> Take an Interview
-                
+                <i className="fa-solid fa-user-tie"></i>
+                <div className="w-1">
+                  </div> Take an Interview
               </NavLink>
             )}
-              <ProfileContainer/>
-              
 
-              {/* mobile toggle section */}
-              <ToggleContainer/>
+            <ProfileContainer />
+
+
+            {/* mobile toggle section */}
+            <ToggleContainer />
           </div>
         </div>
       </Container>

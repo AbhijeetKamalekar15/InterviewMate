@@ -56,7 +56,7 @@ export const MockLoadPage = () => {
   }
 
   return (
-    <div className="flex flex-col w-full gap-8 py-5">
+    <div className="flex flex-col mt-16 w-full gap-8 py-5">
       <div className="flex items-center justify-between w-full gap-2">
         <CustomBreadCrumb
           breadCrumbPage={interview?.position || ""}
@@ -71,6 +71,7 @@ export const MockLoadPage = () => {
       </div>
 
       {interview && <InterviewPin interview={interview} onMockPage />}
+      
 
       <Alert className="bg-yellow-100/50 border-yellow-200 p-4 rounded-lg flex items-start gap-3 -mt-3">
         <Lightbulb className="h-5 w-5 text-yellow-600" />
