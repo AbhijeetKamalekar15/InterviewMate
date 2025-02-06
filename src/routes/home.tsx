@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className='flex-col w-full bg-gray-100'>
-      <Container className="">
+      <Container className="h-auto">
         <div className="my-8 text-center mt-20">
           <h2 className="text-xl text-center">
             <span className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-orange-500 font-extrabold md:text-5xl">
@@ -31,7 +31,7 @@ const HomePage = () => {
         <Container className="md:flex items-center justify-center">
 
         {/* image section */}
-        <div className="flex items-center justify-center w-full rounded-xl bg-gray-100 h-[320px]  overflow-hidden relative">
+        <div className="flex items-center justify-center w-full rounded-xl bg-gray-100 h-auto  overflow-hidden relative">
           <img
             src="/assets/img/newl1.png"
             alt=""
