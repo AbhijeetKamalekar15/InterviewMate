@@ -40,7 +40,7 @@ const HomePage = () => {
         </div>
 
 
-        <div className="w-full items-center justify-evenly md:px-12 md:py-16 md:items-center md:justify-end ">
+        <div className="max-sm:hidden w-full items-center justify-evenly md:px-12 md:py-16 md:items-center md:justify-end ">
           <p className="bg-gray-200 rounded-md p-2 text-3xl font-semibold text-gray-900 text-center">
             250k+
             <span className="block text-xl text-muted-foreground font-normal">
@@ -50,7 +50,7 @@ const HomePage = () => {
           <div className="h-2">
 
           </div>
-          <p className="bg-gray-200 rounded-md p-2 text-3xl font-semibold text-gray-900 text-center">
+          <p className=" bg-gray-200 rounded-md p-2 text-3xl font-semibold text-gray-900 text-center">
             1.2M+
             <span className="block text-xl text-muted-foreground font-normal">
               Interview Aced
@@ -60,16 +60,23 @@ const HomePage = () => {
       </Container>
       {/* marquee section */}
 
-      <div className=" w-full mt-4">
-        <p className="text-center mb-4 text-gray-300">Practice for your <span className="font-bold">DREAM JOB</span></p>
+      <div className=" w-full mt-1">
+        <p className="text-center  text-gray-300">Practice for your <span className="font-bold">DREAM JOB</span></p>
         <Marquee className="h-1/7" pauseOnHover>
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/zoom.png" />
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/microsoft.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/tailwindcss.png" />
+          <MarqueImg img="/assets/svg/c1.svg" />
+          <MarqueImg img="/assets/svg/c2.svg" />
+          <MarqueImg img="/assets/svg/c3.svg" />
+          <MarqueImg img="/assets/svg/c4.svg" />
+          <MarqueImg img="/assets/svg/c6.svg" />
+          <MarqueImg img="/assets/svg/c7.svg" />
+          <MarqueImg img="/assets/svg/c8.svg" />
+          <MarqueImg img="/assets/svg/c9.svg" />
+          <MarqueImg img="/assets/svg/c10.svg" />
+          <MarqueImg img="/assets/svg/c11.svg" />
+
+
+
+
           <MarqueImg img="/assets/img/logo/microsoft.png" />
         </Marquee>
       </div>
