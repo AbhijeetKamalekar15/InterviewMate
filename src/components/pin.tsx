@@ -24,7 +24,12 @@ export const InterviewPin = ({
 
   return (
     <Card className="bg-gray-50 p-4 rounded-md shadow-none hover:shadow-md shadow-gray-200 cursor-pointer transition-all space-y-4">
-      <CardTitle className="text-lg text-gray-700 rounded-md ">{interview?.position}</CardTitle>
+      <div className="space-y-4" onClick={() => {
+                navigate(`/generate/interview/${interview?.id}`, {
+                  replace: true,
+                });
+              }}>
+      <CardTitle className="text-lg text-gray-700 rounded-md " >{interview?.position}</CardTitle>
       <CardDescription>{interview?.description}</CardDescription>
       <div className="w-full flex items-center gap-2 flex-wrap">
         {interview?.techStack.split(",").map((word, index) => (
@@ -36,6 +41,7 @@ export const InterviewPin = ({
             {word}
           </Badge>
         ))}
+      </div>
       </div>
 
       <CardFooter
