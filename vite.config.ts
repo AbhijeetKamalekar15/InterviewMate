@@ -8,6 +8,8 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: Number(process.env.VITE_PORT) || 3000, // Ensure it's a number
+    strictPort: true, // Ensures the app only uses the assigned port
+    allowedHosts: ["interviewmate-wgjq.onrender.com"],
   },
   resolve: {
     alias: {
