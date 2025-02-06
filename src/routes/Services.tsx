@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, BookOpen, Code } from "lucide-react";
 import Container from "@/components/container";

@@ -3,7 +3,7 @@ import Container from "./container";
 import LogoContainer from "./logo-container";
 import { cn } from "@/lib/utils";
 import NavigationRoutes from "./navigation-routes";
-import { useEffect, useId, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import ProfileContainer from "./profile-container";
 import ToggleContainer from "./toggle-container";

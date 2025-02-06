@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -64,7 +63,6 @@ const Contact = () => {
               <div>
                 <input
                   type="text"
-                  name="username"
                   placeholder="Your Name"
                   className="bg-transparent text-black text-sm w-full px-2 py-1 border rounded-md focus:outline-none focus:ring-1 dark:text-white"
                   {...register("username", { required: true })}
@@ -78,7 +76,6 @@ const Contact = () => {
               <div>
                 <input
                   type="email"
-                  name="email"
                   placeholder="Your Email"
                   className="bg-transparent text-black text-sm w-full px-2 py-1 border rounded-md focus:outline-none focus:ring-1 dark:text-white"
                   {...register("email", { required: true })}
@@ -92,7 +89,6 @@ const Contact = () => {
               <div>
                 <input
                   type="text"
-                  name="message"
                   placeholder="Your Message"
                   className="bg-transparent text-black text-sm w-full px-2 py-6 border rounded-md focus:outline-none focus:ring-1 dark:text-white"
                   {...register("message", { required: true })}
